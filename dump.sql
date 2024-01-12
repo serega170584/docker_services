@@ -11,3 +11,10 @@ drop table product_user;
 
 INSERT INTO product_user(login, first_name, second_name, password, token)
 VALUES('test', 'Test', 'Test', 'adasd', '12345');
+
+CREATE TABLE transfer (
+                          id SERIAL,
+                          sum BIGINT NOT NULL,
+                          operation_date TIMESTAMP WITH TIME ZONE,
+                          chunk_uuid UUID
+)

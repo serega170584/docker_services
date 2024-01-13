@@ -18,6 +18,6 @@ CREATE TABLE transfer (
                           operation_date TIMESTAMP WITH TIME ZONE,
                           chunk_uuid UUID,
                           updated_at timestamptz DEFAULT NOW()
-)
+);
 
 drop table transfer;

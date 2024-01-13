@@ -16,5 +16,8 @@ CREATE TABLE transfer (
                           id SERIAL,
                           sum BIGINT NOT NULL,
                           operation_date TIMESTAMP WITH TIME ZONE,
-                          chunk_uuid UUID
+                          chunk_uuid UUID,
+                          updated_at timestamptz DEFAULT NOW()
 )
+
+drop table transfer;

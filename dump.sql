@@ -21,3 +21,14 @@ CREATE TABLE transfer (
 );
 
 drop table transfer;
+
+CREATE TABLE bank_order (
+                            id SERIAL,
+                            sum BIGINT NOT NULL,
+                            operation_date TIMESTAMP WITH TIME ZONE,
+                            chunk_uuid UUID,
+                            updated_at timestamptz DEFAULT NOW()
+);
+
+drop table bank_order;
+
